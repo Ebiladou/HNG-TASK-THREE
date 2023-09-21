@@ -19,8 +19,10 @@ import Logout from "./Logout";
 function Gallery() {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
-  const [searchResults, setSearchResults] = useState([]); //new
-  const [imageOrder, setImageOrder] = useState([]); //new
+  const [searchResults, setSearchResults] = useState([]); 
+  const [imageOrder, setImageOrder] = useState([]); 
+  const [noResults, setNoResults] = useState(false);
+
 
   const Imagedata = [
     {
@@ -113,6 +115,7 @@ function Gallery() {
       image.tag.toLowerCase().includes(query.toLowerCase())
     );
     setSearchResults(filtered);
+    setNoResults(filtered.length === 0); 
   };
 
   const handleSearch = (e) => {
@@ -196,6 +199,7 @@ function Gallery() {
             </Droppable>
           </DragDropContext>
         )}
+         {noResults && <p>No results found.</p>}
       </div>
     </>
   );
