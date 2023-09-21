@@ -39,4 +39,4 @@ Now you can click the link and open the application on your browser.
 
 Check out the live demo of the project:
 
-[Movie Website Live Demo](https://ladou-image-gallery.netlify.app/)
+[Gallery Website Live Demo](https://ladou-image-gallery.netlify.app/)
