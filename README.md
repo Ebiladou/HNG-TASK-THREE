@@ -13,7 +13,7 @@ Follow these steps to set up and run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Ebiladou/HNGX-Task-Three
+   git clone https://github.com/Ebiladou/HNGX-TASK-THREE
 
 2. Navigate to the project directory
 
@@ -39,4 +39,4 @@ Now you can click the link and open the application on your browser.
 
 Check out the live demo of the project:
 
-[Movie Website Live Demo]
+[Movie Website Live Demo](https://ladou-image-gallery.netlify.app/)
