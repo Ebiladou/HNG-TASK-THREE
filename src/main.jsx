@@ -6,7 +6,6 @@ import App from "./App";
 import Gallery from "./pages/Gallery";
 import Drag from "./pages/Drag";
 import Login from "./pages/Login"
-import Homepage from "./components/Homepage";
 
 const router = createBrowserRouter([
   {
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
   {
     path: "/dragdrop",
     element: <Drag/>
-  },
-  {
-    path: "/homepage",
-    element: <Homepage/>
   },
   
 ]);

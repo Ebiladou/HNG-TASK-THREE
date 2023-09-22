@@ -123,18 +123,23 @@ function Gallery() {
     setSearchQuery(query);
   };
 
-  const displayImages = searchResults.length > 0 ? searchResults : imageOrder;
+  useEffect(() => {
+    setImageOrder([...Imagedata]);
+  }, []);
+
 
   const onDragEnd = (result) => {
     if (!result.destination) {
       return;
     }
-    const items = Array.from(...displayImages);
+    const items = Array.from(...imageOrder);
     const [reorderedItem] = items.splice(result.source.index, 1);
     items.splice(result.destination.index, 0, reorderedItem);
 
     setImageOrder(items);
   };
+  
+  const displayImages = searchResults.length > 0 ? searchResults : imageOrder;
 
   return (
     <>

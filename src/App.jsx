@@ -1,14 +1,12 @@
 import React from 'react'
 import './App.css'
-import Drag from './pages/Drag'
-import Gallery from './pages/Gallery'
-import Homepage from './components/Homepage'
+import Login from './pages/Login'
 
 function App() {
   
   return (
     <div>
-      <Homepage/>
+      <Login/>
     </div>
   )
 }
