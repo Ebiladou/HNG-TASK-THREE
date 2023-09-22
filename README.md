@@ -1,6 +1,6 @@
 # Gallery Website Display
 
-This project is built with react, leveraging other packages and libaries like Firebase and react beautiful dnd. The react application is run using vite.
+This project is built with react, leveraging other packages like Firebase and react-sortablejs. The react application is run using vite. The application renders a collection of images, allowing logged in users to view and search available images, and also manipulate their position by using the drag and drop feature provided by the react-sortablejs library. 
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Follow these steps to set up and run the project locally:
 2. Navigate to the project directory
 
    ```bash
-   cd Task-two
+   cd Image-gallery-master
 
 3. Install the dependencies either with npm or yarn
 
@@ -34,6 +34,7 @@ Follow these steps to set up and run the project locally:
     yarn dev
 
 Now you can click the link and open the application on your browser.
+To login to the application, use the username "user@example.com" and the password "1Password".
 
 ## Live Demo
 
