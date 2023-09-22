@@ -1,12 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function Logout() {
+function Logout({setUser}) {
 
     const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate('/login');
+    setUser(false);
+    navigate('/');
   };
 
   return (

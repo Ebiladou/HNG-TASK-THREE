@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login({setUser}) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -17,7 +17,8 @@ function Login() {
     e.preventDefault();
 
     if (formData.email === hardcodedEmail && formData.password === hardcodedPassword) {
-      navigate('/gallery');
+      setUser(true);
+      navigate('/home');
     } else {
       setError('Invalid email or password. Please try again.');
     }
